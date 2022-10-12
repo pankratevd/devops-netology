@@ -7,7 +7,7 @@
 
 ## Ответ
 
-[docker-compose.yml](../files/docker-compose.yml)
+[docker-compose.yml](https://github.com/pankratevd/devops-netology/blob/main/Homeworks/06-db-02-sql/files/docker-compose.yml)
 
 
 
@@ -293,7 +293,13 @@ docker exec pg1 pg_dump -U admin -d test_db --file /backup/bck.dmp -Fc
 Остановка docker-compose:
 docker-compose stop
 
-Далее запущен новый контейнер (конфишурация приведена в ../files/docker-compose2.yml) с новым располоэением файлов БД и подключенным backup разделом с копией.
+Далее запущен новый контейнер
+конфигурация приведена в: 
+``` 
+[docker-compose2.yml]([docker-compose.yml](https://github.com/pankratevd/devops-netology/blob/main/Homeworks/06-db-02-sql/files/docker-compose2.yml))
+
+``` 
+с новым располоэением файлов БД и подключенным backup разделом с копией.
 docker-compose up -d
 
 Выполнены команды:
