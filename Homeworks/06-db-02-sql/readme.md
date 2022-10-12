@@ -296,7 +296,7 @@ docker-compose stop
 Далее запущен новый контейнер
 конфигурация приведена в: 
 ``` 
-[docker-compose2.yml]([docker-compose.yml](https://github.com/pankratevd/devops-netology/blob/main/Homeworks/06-db-02-sql/files/docker-compose2.yml))
+[docker-compose2.yml](https://github.com/pankratevd/devops-netology/blob/main/Homeworks/06-db-02-sql/files/docker-compose2.yml)
 
 ``` 
 с новым располоэением файлов БД и подключенным backup разделом с копией.
