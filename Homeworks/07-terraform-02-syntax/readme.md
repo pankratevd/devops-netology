@@ -8,5 +8,5 @@
 
 Ссылку на репозиторий с исходной конфигурацией терраформа.
 
-###Ответ
+### Ответ
 https://github.com/pankratevd/devops-netology/tree/main/Homeworks/07-terraform-02-syntax/files
