@@ -22,12 +22,15 @@
 
 **resource** -  ключи в map ResourcesMap: map[string]*schema.Resource
 ```
+
 [https://github.com/hashicorp/terraform-provider-aws/blob/e1d68faa27997073d80bd71ae99f73a40a6ef20c/internal/provider/provider.go#L931](https://github.com/hashicorp/terraform-provider-aws/blob/e1d68faa27997073d80bd71ae99f73a40a6ef20c/internal/provider/provider.go#L931)
 
 ```markdown
 **data_resource** - ключи в map DataSourcesMap: map[string]*schema.Resource
 ```
+
 [https://github.com/hashicorp/terraform-provider-aws/blob/e1d68faa27997073d80bd71ae99f73a40a6ef20c/internal/provider/provider.go#L419]([https://github.com/hashicorp/terraform-provider-aws/blob/e1d68faa27997073d80bd71ae99f73a40a6ef20c/internal/provider/provider.go#L419])
+
 
 
 2. Для создания очереди сообщений SQS используется ресурс `aws_sqs_queue` у которого есть параметр `name`. 
