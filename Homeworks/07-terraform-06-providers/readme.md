@@ -33,10 +33,11 @@
 [https://github.com/hashicorp/terraform-provider-aws/blob/e1d68faa27997073d80bd71ae99f73a40a6ef20c/internal/provider/provider.go#L419](https://github.com/hashicorp/terraform-provider-aws/blob/e1d68faa27997073d80bd71ae99f73a40a6ef20c/internal/provider/provider.go#L419)
 
 
+
 2. Для создания очереди сообщений SQS используется ресурс `aws_sqs_queue` у которого есть параметр `name`. 
     * С каким другим параметром конфликтует `name`? Приложите строчку кода, в которой это указано.
    
-
+### Ответ 
 ```markdown
 Конфликтует с `name_prefix`
 
@@ -52,17 +53,20 @@
 		},
 
 ```
+
+
  * Какая максимальная длина имени? 
  * Какому регулярному выражению должно подчиняться имя? 
 
-
+### Ответ 
 ```markdown
 Максимальная длина имени 80 символов.
 
 Согласно документации (./website/docs/r/sqs_queue.html.markdown):
 
 name - (Optional) The name of the queue. 
-Queue names must be made up of only uppercase and lowercase ASCII letters, numbers, underscores, and hyphens, and must be between 1 and 80 characters long. 
+Queue names must be made up of only uppercase and lowercase ASCII letters, numbers, underscores, and hyphens, 
+and must be between 1 and 80 characters long. 
 For a FIFO (first-in-first-out) queue, the name must end with the .fifo suffix. 
 
 В реализации провайдера (файл: ./internal/service/sqs/queue.go) есть соответствующая проверка:
