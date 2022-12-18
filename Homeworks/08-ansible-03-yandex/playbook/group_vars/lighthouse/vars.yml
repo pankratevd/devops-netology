@@ -1,0 +1,4 @@
+nginx_user: nginx
+lighthouse_vcs : "https://github.com/VKCOM/lighthouse.git"
+lighthouse_location_dir:  /usr/share/nginx/html/lighthouse
+nginx_port: 8080

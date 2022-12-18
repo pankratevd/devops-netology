@@ -1,0 +1,15 @@
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_host:  "{{ clickhouse }}"
+      ansible_user: centos
+vector:
+  hosts:
+    vector-01:
+      ansible_host: "{{ vector }}"
+      ansible_user: centos
+lighthouse:
+  hosts:
+    lighhouse-01:
+      ansible_host: "{{ lighthouse }}"
+      ansible_user: centos
