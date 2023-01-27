@@ -1,0 +1,17 @@
+node("linux"){
+    stage("Git checkout"){
+        git credentialsId: '2747b95a-ffa0-4300-a2d6-54680dda7be', url: 'git@github.com:pankratevd/devops-netology.git'
+    }
+    stage("Sample define secret_check"){
+        secret_check=true
+    }
+    stage("Run playbook"){
+        if (secret_check){
+            sh 'ansible-playbook site.yml -i inventory/prod.yml'
+        }
+        else{
+            echo 'need more action'
+        }
+
+    }
+}
