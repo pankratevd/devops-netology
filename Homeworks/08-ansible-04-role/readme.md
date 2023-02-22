@@ -30,12 +30,17 @@
 10. Выложите playbook в репозиторий.
 11. В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
+
 ##Ответ
+
     - lighthouse:
 https://github.com/pankratevd/lighthouse-role
 
-    - vector
+    - vector:
 https://github.com/pankratevd/vector-role
+
+    - playbook:
+https://github.com/pankratevd/devops-netology/tree/main/Homeworks/08-ansible-04-role/playbook
 
 ---
 
