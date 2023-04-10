@@ -24,6 +24,7 @@
 
 ###Ответ
 
+
 >kubectl get nodes на локальной машине:
 
 ![img1.png](images/img1.png)
